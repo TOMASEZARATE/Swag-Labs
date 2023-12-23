@@ -15,9 +15,10 @@ def get_credentials():
     
 #Creo una funcion para realizar el login 
 def login(driver):
-    #Importo la funcion open_url 
-    open_url(url_value)
 
+    #Importo la funcion open_url 
+    open_url(driver)
+    
     #Importo la funcion implicit_wait
     implicit_wait(driver)
     
@@ -25,7 +26,6 @@ def login(driver):
     credentials = get_credentials()
 
     #Obtengo los datos del archivo "loginData"
-    url_value = credentials['url']
     user_value = credentials['user']
     password_value = credentials['password']
 
